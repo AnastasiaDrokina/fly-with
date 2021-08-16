@@ -1,9 +1,9 @@
 .container {
-  max-width: $width-max-container-width;
-  padding: 0 45px;
+  max-width: $max-container-width;
+  padding: 0 15px;
   margin: 0 auto;
 
-  @include desktop-middle {
-    padding: 0 15px;
+  @include min-lg {
+    padding: 0 45px;
   }
 }
