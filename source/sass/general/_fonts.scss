@@ -1,10 +1,19 @@
-// @font-face {
-//   font-family: "Roboto Condensed";
-//   font-style: normal;
-//   font-weight: normal;
-//   font-display: swap;
-//   src:
-//     local("Roboto Condensed"),
-//     url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
-//     url("../fonts/RobotoCondensed-Regular.woff") format("woff");
-// }
+@font-face {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Tenor Sans"),
+    url("../fonts/TenorSans-Regular.woff2") format("woff2"),
+    url("../fonts/TenorSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("Noto Sans"),
+    url("../fonts/NotoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSans-Regular.woff") format("woff");
+}

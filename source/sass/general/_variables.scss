@@ -1,20 +1,26 @@
 // Fonts
-$font-main: arial, calibri, sans-serif;
-$font-secondary: "Times New Roman", georgia, sans-serif;
+$font-main: "Noto Sans", Arial, sans-serif;
+$font-secondary: "Tenor Sans", Arial, sans-serif;
 
 // Breakpoints
-$width-mobile: 320px;
-$width-tablet: 768px;
-$width-desktop: 1024px;
-$width-desktop-middle: 1246px;
-$width-fullhd: 1920px;
-
 $width-max-container-width: 1216px;
+
+$sm: 576px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1400px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 // Colors
+$white: #fefefe;
+$black: #505050;
+$peach: #d9ab91;
+$brown: #733f2c;
+$grey-light: #d9d0c7;
+$grey-dark: #8c837b;
 
 // Styleguide
 $hover-opacity: 0.5;
