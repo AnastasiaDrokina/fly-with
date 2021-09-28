@@ -6,8 +6,29 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _default = function _default() {// code here
-  // console.log(`slider.js`);
+var _default = function _default() {
+  var btnToggle = document.querySelector(".js-header-toggle");
+  var menuNav = document.querySelector(".js-header-nav");
+  var menuLinks = document.querySelectorAll(".js-header-link"); // Open and close menu
+
+  btnToggle.addEventListener("click", function () {
+    if (!menuNav.classList.contains("is-opened")) {
+      menuNav.classList.add("is-opened");
+      btnToggle.classList.add("is-opened");
+    } else {
+      menuNav.classList.remove("is-opened");
+      btnToggle.classList.remove("is-opened");
+    }
+  }); // Active state on link
+
+  menuLinks.forEach(function (menuLink) {
+    menuLink.addEventListener("click", function () {
+      menuLinks.forEach(function (link) {
+        link.classList.remove("is-active");
+      });
+      menuLink.classList.add("is-active");
+    });
+  });
 };
 
 exports.default = _default;
@@ -15,10 +36,27 @@ exports.default = _default;
 },{}],2:[function(require,module,exports){
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {// code here
+  // console.log(`slider.js`);
+};
+
+exports.default = _default;
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
 var _slider = _interopRequireDefault(require("./modules/slider.js"));
+
+var _menu = _interopRequireDefault(require("./modules/menu.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _slider.default)();
+(0, _menu.default)();
 
-},{"./modules/slider.js":1}]},{},[2]);
+},{"./modules/menu.js":1,"./modules/slider.js":2}]},{},[3]);
