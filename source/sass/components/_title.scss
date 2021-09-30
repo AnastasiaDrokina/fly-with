@@ -1,10 +1,20 @@
-// .title {
+.title {
+  margin: 0;
+  font-family: $font-secondary;
+  font-size: 24px;
 
-// }
+  @include min-sm {
+    font-size: 64px;
+  }
+}
 
-// .title--first {
+.title--first {
+  text-align: center;
 
-// }
+  @include min-sm {
+    text-align: left;
+  }
+}
 
 // .title--seconde {
 

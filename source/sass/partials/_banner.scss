@@ -1,0 +1,60 @@
+.banner {
+  position: relative;
+  padding-bottom: 27px;
+  background: url("../img/yoga-mobile.jpg") center no-repeat transparent;
+  background-size: cover;
+
+  @include min-sm {
+    padding-bottom: 251px;
+    background: url("../img/yoga.jpg") center no-repeat transparent;
+    background-size: cover;
+  }
+}
+.banner__title {
+  padding: 78px 0 20px;
+  color: $white;
+
+  @include min-sm {
+    padding: 215px 0 26px;
+    color: $black;
+  }
+}
+.banner__title-smaller {
+  display: block;
+  font-size: 14px;
+
+  @include min-sm {
+    color: $white;
+    font-size: 48px;
+  }
+}
+.banner__text {
+  margin: 0 0 18px;
+  color: $white;
+  font-size: 14px;
+  text-align: center;
+
+  span {
+    display: block;
+  }
+
+  @include min-sm {
+    margin-bottom: 87px;
+    font-size: 20px;
+    text-align: left;
+
+    span {
+      display: inline;
+    }
+  }
+}
+
+.banner__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(70%);
+}
