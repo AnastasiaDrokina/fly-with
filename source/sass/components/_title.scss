@@ -1,24 +1,29 @@
 .title {
   margin: 0;
   font-family: $font-secondary;
-  font-size: 24px;
-
-  @include min-sm {
-    font-size: 64px;
-  }
+  font-weight: normal;
 }
 
 .title--first {
+  font-size: 24px;
   text-align: center;
 
   @include min-sm {
+    font-size: 64px;
     text-align: left;
   }
 }
 
-// .title--seconde {
+.title--seconde {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 18px;
 
-// }
+  @include min-sm {
+    margin-bottom: 40px;
+    font-size: 42px;
+  }
+}
 
 // .title--third {
 

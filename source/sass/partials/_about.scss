@@ -1,0 +1,94 @@
+.about {
+  padding-top: 30px;
+
+  @include min-sm {
+    padding-top: 80px;
+  }
+}
+
+.about__description {
+  margin: 0 0 25px;
+  font-size: 12px;
+
+  @include min-sm {
+    max-width: 640px;
+    margin: 0 auto 60px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.about__block {
+  display: flex;
+
+  @include min-sm {
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.about__picture {
+  @include min-sm {
+    position: relative;
+    margin-right: 30px;
+  }
+}
+
+.about__img {
+  display: none;
+
+  @include min-sm {
+    display: block;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 384px;
+      height: 478px;
+      border: 1px solid $black;
+    }
+  }
+}
+
+.about__columns {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @include min-sm {
+    flex-direction: row;
+  }
+}
+.about__columns-left {
+}
+.about__columns-right {
+}
+
+.about__numbers-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include min-sm {
+    max-width: 245px;
+  }
+}
+.about__numbers-img {
+  @include min-sm {
+    width: 70px;
+    height: 70px;
+  }
+}
+.about__numbers-text {
+  text-align: center;
+  font-size: 12px;
+
+  @include min-sm {
+    font-size: 16px;
+  }
+}
