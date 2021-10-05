@@ -41,8 +41,25 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _default = function _default() {// code here
-  // console.log(`slider.js`);
+var _default = function _default() {
+  var swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination"
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar"
+    }
+  });
 };
 
 exports.default = _default;

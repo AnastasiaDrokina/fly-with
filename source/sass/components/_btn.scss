@@ -25,6 +25,9 @@
   }
 }
 
-// .btn--main {
-
-// }
+.btn--centre {
+  @include min-sm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
