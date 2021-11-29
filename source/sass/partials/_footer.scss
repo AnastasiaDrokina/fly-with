@@ -1,1 +1,122 @@
-// footer
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__map {
+  display: none;
+
+  @include min-lg {
+    display: block;
+  }
+}
+
+.footer__contacts-wrapper {
+  padding-top: 23px;
+
+  @include min-lg {
+    .title {
+      text-align: left;
+    }
+  }
+}
+
+.footer__contacts {
+  margin-bottom: 10px;
+
+  @include min-sm {
+    margin-bottom: 12px;
+  }
+}
+
+.footer__tel,
+.footer__mail,
+.footer__address,
+.footer__hours {
+  display: block;
+  color: $black;
+  font-size: 12px;
+
+  @include min-sm {
+    font-size: 18px;
+  }
+}
+
+.footer__tel {
+  margin-bottom: 5px;
+
+  @include min-sm {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__nav-wrapper {
+  padding: 10px 0 30px;
+  background-color: $black;
+
+  @include min-sm {
+    padding: 60px 0;
+  }
+
+  .socials {
+    display: none;
+    @include min-sm {
+      display: block;
+    }
+  }
+}
+
+.footer__columns {
+  @include min-sm {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__tel-bottom {
+  color: $white;
+  display: none;
+
+  @include min-sm {
+    display: block;
+    margin: 20px 0 20px;
+  }
+}
+
+.footer__contacts-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+
+  @include min-sm {
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}
+.footer__nav-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__nav-column {
+  @include list-reset;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  @include min-sm {
+    margin-right: 200px;
+    font-size: 18px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer__nav-item {
+  margin-bottom: 10px;
+
+  @include min-sm {
+    margin-bottom: 16px;
+  }
+}

@@ -15,7 +15,7 @@
   }
 }
 
-.about__picture {
+.about__figure {
   @include min-sm {
     position: relative;
     margin-right: 30px;
@@ -24,6 +24,7 @@
 
 .about__img {
   display: none;
+  position: relative;
 
   @include min-sm {
     display: block;

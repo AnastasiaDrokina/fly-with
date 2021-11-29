@@ -1,0 +1,98 @@
+.team {
+}
+.team__swiper {
+  .swiper-slide {
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $black;
+
+    &::after {
+      font-size: 18px;
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}
+
+.teacher {
+  position: relative;
+  z-index: 1;
+  max-width: 228px;
+  margin: 0 auto;
+
+  border: 1px solid $black;
+
+  @include min-sm {
+    max-width: 348px;
+  }
+}
+
+.teacher__img {
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+  width: 105px;
+
+  @include min-sm {
+    left: -10px;
+    width: 132px;
+  }
+}
+
+.teacher__info {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.teacher__name {
+  box-sizing: border-box;
+  width: 153px;
+  margin-left: auto;
+  padding-left: 12px;
+  margin-bottom: 20px;
+  background: $grey-light;
+  font-family: $font-secondary;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: left;
+
+  @include min-sm {
+    width: 238px;
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+
+.teacher__info-inner {
+  margin-left: 110px;
+  @include min-sm {
+    margin-left: 140px;
+  }
+}
+
+.teacher__practice {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+
+  @include min-sm {
+    font-size: 18px;
+  }
+}
+
+.teacher__experience {
+  margin: 0;
+  font-size: 10px;
+
+  @include min-sm {
+    font-size: 12px;
+  }
+}
