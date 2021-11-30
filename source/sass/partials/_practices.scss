@@ -5,14 +5,36 @@
   }
 
   .practices__figure {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 203px;
+    height: 203px;
+    margin: 0 auto;
+
+    @include min-sm {
+      width: 320px;
+      height: 320px;
+    }
   }
 
   .practices__img {
-    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 
   .swiper-button-prev,
   .swiper-button-next {
     color: $black;
+
+    &::after {
+      font-size: 18px;
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
   }
 }

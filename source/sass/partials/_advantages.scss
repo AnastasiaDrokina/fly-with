@@ -8,6 +8,7 @@
 }
 
 .advantages__figure {
+  position: relative;
   @include min-sm {
     margin-right: 50px;
   }

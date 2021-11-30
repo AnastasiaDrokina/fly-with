@@ -50,3 +50,30 @@ img {
 figure {
   margin: 0;
 }
+
+.outline {
+  @include min-lg {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      bottom: 10px;
+      left: -10px;
+      right: 10px;
+      z-index: -1;
+      display: block;
+      border: 1px solid #505050;
+    }
+  }
+}
+
+.outline--right {
+  @include min-lg {
+    &::before {
+      top: -10px;
+      bottom: 10px;
+      left: 10px;
+      right: -10px;
+    }
+  }
+}
