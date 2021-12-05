@@ -34,7 +34,10 @@
 
 .practices__name {
   position: relative;
+  display: block;
   font-size: 12px;
+  color: $black;
+
   @include min-sm {
     font-size: 24px;
   }

@@ -2,32 +2,74 @@
   <div class="container">
     <h2 class="title title--seconde">События</h2>
   </div>
-  <img
-    class="blog__img"
-    src="img/incense.jpg"
-    width="320"
-    height="151"
-    alt="Благовония"
-  />
-  <div class="blog__wrapper">
-    <div class="container blog__inner">
-      <div class="blog__info">
-        <p class="blog__title">
-          Курс медитации "С опорой на себя" от Ани Ивановой
-        </p>
-        <p class="blog__text">
-          Курс об устойчивости, заземлении, чувстве базовой поддержки от
-          сертифицированного преподавателя медитации и практик осознанности.
-        </p>
+  <div class="blog__columns">
+    <figure class="outline outline--right">
+      <img
+        class="blog__img"
+        src="img/incense.jpg"
+        width="320"
+        height="151"
+        alt="Благовония"
+      />
+    </figure>
+    <div class="blog__wrapper">
+      <div class="container blog__inner">
+        <div class="blog__info">
+          <p class="blog__title">
+            Курс медитации "С опорой на себя" от Ани Ивановой
+          </p>
+          <p class="blog__text">
+            Курс об устойчивости, заземлении, чувстве базовой поддержки от
+            сертифицированного преподавателя медитации и практик осознанности.
+          </p>
+        </div>
+        <include
+          src="button.html"
+          locals='{
+            "text": "Читать далее",
+            "class": "btn btn--centre btn--small"
+            }'
+        >
+        </include>
       </div>
-      <include
-        src="button.html"
-        locals='{
-          "text": "Записаться",
-          "class": "btn btn--centre btn--small"
-          }'
-      >
-      </include>
     </div>
   </div>
+  <div class="blog__columns">
+    <figure class="outline outline--right">
+      <img
+        class="blog__img"
+        src="img/tibetan-yoga-main.jpg"
+        width="320"
+        height="151"
+        alt="Мужчина занимается тибесткой йогой"
+      />
+    </figure>
+    <div class="blog__wrapper">
+      <div class="container blog__inner">
+        <div class="blog__info">
+          <p class="blog__title">Тибетская йога</p>
+          <p class="blog__text">
+            Занятия Тибетской йогой положительно влияют на сон, настроение и
+            общее физическое состояние человека.
+          </p>
+        </div>
+        <include
+          src="button.html"
+          locals='{
+            "text": "Читать далее",
+            "class": "btn btn--centre btn--small"
+            }'
+        >
+        </include>
+      </div>
+    </div>
+  </div>
+  <include
+    src="button.html"
+    locals='{
+            "text": "Загрузить ещё",
+            "class": "btn btn--centre btn-blog"
+            }'
+  >
+  </include>
 </section>

@@ -7,3 +7,9 @@
     padding: 0 45px;
   }
 }
+
+.container--fluid {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+}

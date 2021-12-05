@@ -2,6 +2,12 @@
   display: flex;
 }
 
+.footer__inner {
+  @include min-lg {
+    width: 50%;
+  }
+}
+
 .footer__map {
   display: none;
 
