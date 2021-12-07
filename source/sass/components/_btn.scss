@@ -3,7 +3,7 @@
 .btn {
   @include btn-reset;
   display: block;
-  width: 90%;
+  width: 80%;
   padding: 10px;
   margin: 0 auto;
   background: $black;
@@ -18,10 +18,9 @@
   }
 
   @include min-sm {
-    max-width: 320px;
-    font-size: 24px;
+    max-width: 240px;
+    font-size: 16px;
     margin: 0;
-    padding: 15px;
   }
 }
 

@@ -42,24 +42,54 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  var swiper = new Swiper(".swiper", {
-    // Optional parameters
+  var swiper = new Swiper(".swiper-practice", {
     direction: "horizontal",
     loop: true,
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination"
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // Responsive breakpoints
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 3
+      }
     },
-    // Navigation arrows
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
-    },
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar"
     }
   });
+  var breakpoint = window.matchMedia("(max-width: 1024px)");
+  var swiperTeam;
+
+  function setSwiperTeam() {
+    if (breakpoint.matches === true) {
+      swiperTeam = new Swiper(".swiper-team", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        // Responsive breakpoints
+        breakpoints: {
+          320: {
+            slidesPerView: 1
+          }
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    } else {
+      if (swiperTeam !== undefined) {
+        swiperTeam.destroy(true, true);
+      }
+    }
+  }
+
+  breakpoint.addEventListener("change", setSwiperTeam);
+  setSwiperTeam();
 };
 
 exports.default = _default;

@@ -1,9 +1,10 @@
 .footer__wrapper {
   display: flex;
+  border-top: 1px solid $black;
 }
 
 .footer__inner {
-  @include min-lg {
+  @include min-sm {
     width: 50%;
   }
 }
@@ -11,7 +12,7 @@
 .footer__map {
   display: none;
 
-  @include min-lg {
+  @include min-sm {
     display: block;
   }
 }
@@ -19,7 +20,7 @@
 .footer__contacts-wrapper {
   padding-top: 23px;
 
-  @include min-lg {
+  @include min-sm {
     .title {
       text-align: left;
     }
@@ -63,18 +64,29 @@
     padding: 60px 0;
   }
 
-  .socials {
+  .social {
     display: none;
+    margin-bottom: 0;
     @include min-sm {
-      display: block;
+      display: flex;
     }
+  }
+
+  .social__link {
+    vertical-align: top;
+  }
+
+  .social__icon {
+    fill: $white;
   }
 }
 
 .footer__columns {
+  display: flex;
+  flex-wrap: wrap;
   @include min-sm {
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 
@@ -92,30 +104,29 @@
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
+  width: 100%;
 
   @include min-sm {
-    margin-bottom: 20px;
     flex-direction: column;
+    align-items: center;
+    width: 33.333%;
   }
-}
-.footer__nav-inner {
-  display: flex;
-  justify-content: space-around;
 }
 
 .footer__nav-column {
   @include list-reset;
+  width: 50%;
   color: $white;
   text-transform: uppercase;
   font-size: 12px;
 
   @include min-sm {
-    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.333%;
     font-size: 18px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 

@@ -1,0 +1,23 @@
+.social {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @include min-sm {
+    margin-bottom: 0;
+  }
+}
+
+.social__item {
+  margin-right: 12px;
+}
+
+.social__link {
+  display: block;
+  vertical-align: top;
+}
+
+.social__icon {
+  fill: $black;
+}

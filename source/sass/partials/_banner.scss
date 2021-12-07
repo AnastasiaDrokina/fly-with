@@ -1,15 +1,43 @@
 .banner {
   position: relative;
-  padding-bottom: 27px;
+}
+
+.banner--main {
+  min-height: 253px;
   background: url("../img/yoga-mobile.jpg") center no-repeat transparent;
   background-size: cover;
 
   @include min-sm {
-    padding-bottom: 251px;
+    min-height: 796px;
     background: url("../img/yoga.jpg") center no-repeat transparent;
     background-size: cover;
   }
 }
+
+.banner--second {
+  min-height: 169px;
+  background: url("../img/yoga-girl-practice-mobile.jpg") center no-repeat
+    transparent;
+  background-size: cover;
+
+  .title {
+    padding-top: 56px;
+    color: $white;
+    text-align: center;
+
+    @include min-md {
+      padding-top: 202px;
+    }
+  }
+
+  @include min-sm {
+    min-height: 480px;
+    background: url("../img/yoga-girl-practice.jpg") center no-repeat
+      transparent;
+    background-size: cover;
+  }
+}
+
 .banner__title {
   padding: 78px 0 20px;
   color: $white;
