@@ -16,14 +16,13 @@
 }
 
 .card__class {
-  padding: 5px 50px;
+  padding: 5px 15px;
   margin: 0 0 15px;
   background: $peach;
   font-family: $font-secondary;
   font-size: 18px;
 
   @include min-sm {
-    padding: 10px 50px;
     font-size: 32px;
     margin-bottom: 50px;
   }
