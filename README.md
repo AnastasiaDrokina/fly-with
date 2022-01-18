@@ -1,18 +1,43 @@
-# Краткая инструкция по работе
+# Fly With
 
-## Для начала работы должен быть установлен:
-- Node.js v.10.15.3
-- Gulp v4
-- npm last version
+Yoga studio website where you can find informations about classes, mentors and subscriptions.
 
-## Основные команды для работы
-- Установка - npm i
-- Запуск локального сервера - npm start
-- Сборка проекта без запуска локального сервера - npm run build
-- Запуск тестирования на соответствия код-гайдам - npm test
+## What I've learned
 
-В папке package.json изменить имя и описание.
+- Splitting HTML components between multiple files (includes)
+- Responsive
+- Design, I worked on the UI/UX
 
-Все разработка ведётся в директории source.
+## Setup
 
-Итоговый код попадает в директорию build.
+### Prerequisites
+
+- [git](https://git-scm.com/)
+- [node](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+
+To verify it, you can run this:
+
+```
+git --version
+node --version
+npm --version
+```
+
+### Installation
+
+```
+git clone https://github.com/AnastasiaDrokina/fly-with
+cd fly-with
+npm install
+```
+
+To start the app, run:
+
+```
+npm start
+```
+
+## Deployment
+
+Deployed on [GitHub Pages](https://pages.github.com/)
