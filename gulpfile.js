@@ -43,17 +43,19 @@ function css() {
 }
 
 function img() {
-  return src(`source/img/**/*.{jpg,png,svg}`)
-    .pipe(
-      imagemin([
-        imagemin.mozjpeg({ quality: 75, progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
-        imagemin.svgo({
-          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
-        }),
-      ])
-    )
-    .pipe(dest(`build/img/`));
+  return (
+    src(`source/img/**/*.{jpg,png,svg}`)
+      // .pipe(
+      //   imagemin([
+      //     imagemin.mozjpeg({ quality: 75, progressive: true }),
+      //     imagemin.optipng({ optimizationLevel: 5 }),
+      //     imagemin.svgo({
+      //       plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+      //     }),
+      //   ])
+      // )
+      .pipe(dest(`build/img/`))
+  );
 }
 
 function imgWebp() {

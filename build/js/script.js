@@ -61,35 +61,24 @@ var _default = function _default() {
       prevEl: ".swiper-button-prev"
     }
   });
-  var breakpoint = window.matchMedia("(max-width: 1024px)");
-  var swiperTeam;
-
-  function setSwiperTeam() {
-    if (breakpoint.matches === true) {
-      swiperTeam = new Swiper(".swiper-team", {
-        direction: "horizontal",
-        loop: true,
-        slidesPerView: 1,
-        // Responsive breakpoints
-        breakpoints: {
-          320: {
-            slidesPerView: 1
-          }
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
-      });
-    } else {
-      if (swiperTeam !== undefined) {
-        swiperTeam.destroy(true, true);
+  var swiperTeam = new Swiper(".swiper-team", {
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 1,
+    // Responsive breakpoints
+    breakpoints: {
+      320: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 2
       }
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
     }
-  }
-
-  breakpoint.addEventListener("change", setSwiperTeam);
-  setSwiperTeam();
+  });
 };
 
 exports.default = _default;

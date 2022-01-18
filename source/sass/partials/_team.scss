@@ -1,7 +1,8 @@
 .team {
 }
 .team__swiper {
-  .swiper-slide {
+  @include min-xl {
+    max-width: 900px;
   }
 
   .swiper-button-prev,
