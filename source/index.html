@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Навигация по сайту</title>
-    <meta charset="UTF-8" />
+    <include src="head.html"></include>
+    <title>Главная</title>
   </head>
-
   <body>
-    <div class="container">
-      <h1>Навигация по сайту</h1>
-
-      <ul>
-        <li><a href="main-page.html">flywith.html -- Главная</a></li>
-        <li><a href="practices-page.html">practices.html -- Практики</a></li>
-        <li>
-          <a href="recruitment-page.html">recruitment.html -- Вакансия</a>
-        </li>
-        <li><a href="schedule-page.html">schedule.html -- Расписание</a></li>
-      </ul>
-    </div>
+    <include src="header.html"></include>
+    <main>
+      <include src="banner-main.html"></include>
+      <include src="about.html"></include>
+      <include src="practices-section.html"></include>
+      <include src="advantages.html"></include>
+      <include src="tariff.html"></include>
+      <include src="team.html"></include>
+      <include src="blog.html"></include>
+    </main>
+    <include src="footer.html"></include>
+    <include src="script.html"></include>
   </body>
 </html>
