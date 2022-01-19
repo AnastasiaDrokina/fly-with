@@ -114,11 +114,12 @@
   width: 20px;
   height: 20px;
   margin-left: auto;
-  background: url("../img/icons/menu.svg") center no-repeat transparent;
+  background: url("https://raw.githubusercontent.com/AnastasiaDrokina/fly-with/main/docs/img/icons/menu.svg")
+    center no-repeat transparent;
   background-size: contain;
 
   &.is-opened {
-    background-image: url("../img/icons/cross.svg");
+    background-image: url("https://raw.githubusercontent.com/AnastasiaDrokina/fly-with/main/docs/img/icons/cross.svg");
   }
 
   @include min-xl {

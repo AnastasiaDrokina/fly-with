@@ -4,20 +4,22 @@
 
 .banner--main {
   min-height: 253px;
-  background: url("../img/yoga-mobile.jpg") center no-repeat transparent;
+  background: url("https://raw.githubusercontent.com/AnastasiaDrokina/fly-with/main/docs/img/yoga-mobile.jpg")
+    center no-repeat transparent;
   background-size: cover;
 
   @include min-sm {
     min-height: 796px;
-    background: url("../img/yoga.jpg") center no-repeat transparent;
+    background: url("https://raw.githubusercontent.com/AnastasiaDrokina/fly-with/main/docs/img/yoga.jpg")
+      center no-repeat transparent;
     background-size: cover;
   }
 }
 
 .banner--second {
   min-height: 169px;
-  background: url("../img/yoga-girl-practice-mobile.jpg") center no-repeat
-    transparent;
+  background: url("https://raw.githubusercontent.com/AnastasiaDrokina/fly-with/main/docs/img/yoga-girl-practice-mobile.jpg")
+    center no-repeat transparent;
   background-size: cover;
 
   .title {
@@ -32,8 +34,8 @@
 
   @include min-sm {
     min-height: 480px;
-    background: url("../img/yoga-girl-practice.jpg") center top no-repeat
-      transparent;
+    background: url("https://raw.githubusercontent.com/AnastasiaDrokina/fly-with/main/docs/img/yoga-girl-practice.jpg")
+      center top no-repeat transparent;
     background-size: cover;
   }
 }
